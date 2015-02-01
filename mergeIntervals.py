@@ -6,6 +6,7 @@ class Interval:
 		self.start = s
 		self.end = e
 
+# Print out a list of Interval
 def printf(intervals):
 		for item in intervals:
 			print item.start, item.end
