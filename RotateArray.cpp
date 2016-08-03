@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
 
-
 class Solution {
 public:
     void rotate(int nums[], int n, int k) {
@@ -15,7 +14,7 @@ public:
         for (start=0; start<k; start+=step)
         {
             int anchor=start;
-            int record=nums[anchor];
+	int record=nums[anchor];
             cout << "start = " << start << endl;
             do 
             {
@@ -34,6 +33,5 @@ int main()
 	Solution s;
 	int a[54];
 	for (int i=1; i<55; i++) a[i-1]=a[i];
-	s.rotate(a, 54, 45);
-	
+	s.rotate(a, 54, 45);	
 }
